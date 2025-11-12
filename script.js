@@ -1,4 +1,4 @@
-document.querySelectorAll('.track-btn').forEach(button => {
+document.querySelectorAll('.track-btn, .carousel-arrow').forEach(button => {
   button.addEventListener('click', () => {
     const track = document.getElementById(button.dataset.track);
     if (!track) return;

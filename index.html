@@ -13,108 +13,90 @@
 <body>
   <header class="top-bar">
     <div class="logo-area">
-      <img src="https://dummyimage.com/120x40/0a4f6a/ffffff&text=Book+Your+Lab" alt="Book Your Lab logo">
+      <img src="./assets/logo.png" alt="Book Your Lab">
     </div>
     <div class="search-box">
       <i class="fas fa-search"></i>
-      <input type="text" placeholder="Search for Diagnostic Tests / Health Checkup / Scan">
-      <button aria-label="Voice search"><i class="fas fa-microphone"></i></button>
+      <input type="text" placeholder="Search  For Diagnostic Tests / Health Checkup / Scan">
+      <button class="voice-btn" aria-label="Voice search"><i class="fas fa-microphone"></i></button>
     </div>
-    <nav class="main-nav">
-      <a href="#">Diagnostic Tests</a>
-      <a href="#">Preventive Health Check</a>
-      <a href="#">Health Scan</a>
-      <a href="#">Deal Of The Day</a>
-      <a href="#">Subscription</a>
-      <a href="#">COVID-19</a>
-      <a href="#">Customer Service</a>
-    </nav>
-    <div class="header-actions">
-      <button class="flag" aria-label="Select language"><img src="https://flagcdn.com/w20/in.png" alt="India flag"></button>
-      <a href="#">Hello, Sign In</a>
-      <a href="#">Location Mumbai</a>
-      <button class="upload"><i class="fas fa-upload"></i> Upload Prescription</button>
-      <a class="call" href="tel:+919090666333"><i class="fab fa-whatsapp"></i> (+91) 9090 666 333</a>
+    <div class="header-right">
+      <button class="flag-btn" aria-label="Select country">
+        <img src="https://flagcdn.com/w20/in.png" alt="India flag">
+      </button>
+      <a href="#" class="sign-in">Hello,<br><strong>Sign In</strong></a>
+      <a href="#" class="location"><i class="fas fa-map-marker-alt"></i> Location<br><strong>Mumbai</strong></a>
+      <button class="upload-btn"><i class="fas fa-upload"></i> Upload Prescription</button>
     </div>
   </header>
 
+  <nav class="main-nav">
+    <button class="menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <a href="#" class="active">Diagnostic Tests</a>
+    <a href="#">Preventive Health Check</a>
+    <a href="#">Health Scan</a>
+    <a href="#">Deal Of The Day</a>
+    <a href="#">Subscription</a>
+    <a href="#">COVID-19</a>
+    <a href="#">Customer Service</a>
+    <a href="#" class="contact-btn">
+      <i class="fab fa-whatsapp"></i>
+      <i class="fas fa-phone"></i>
+      <span>(+91) 9090 666 333</span>
+    </a>
+  </nav>
+
   <main>
-    <section class="hero hero-primary">
+    <section class="hero">
       <div class="hero-content">
-        <p class="tag">Best PET CT Services</p>
-        <h1>At Affordable Prices</h1>
+        <h1>Best PET CT Services<br>At Affordable Prices</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-        <div class="cta-group">
-          <a class="btn" href="#">Check Out Now</a>
+        <a class="hero-btn" href="#">Check Out Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/pet-scan.jpg" alt="PET CT Scanner Machine">
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <div class="section-label">Health Packages</div>
+            <h2 class="section-title">Popular Health Check Packs</h2>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="PET CT Machine">
-      </div>
-    </section>
+        <div class="packages-grid">
+            <div class="package-card">
+                <div class="package-badge">60% Off</div>
+                <h3 class="package-title">Full Body Health<br>Checkup</h3>
+                <div class="package-tests">79 Tests</div>
+                <div class="package-price">
+                    <span class="original-price">₹ 3000/-</span>
+                    <span class="current-price">₹ 1300/-</span>
+                </div>
+                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+            </div>
 
-    <section class="stats">
-      <article class="stat-card">
-        <div class="icon"><i class="fas fa-vial"></i></div>
-        <h3>500+</h3>
-        <p>Tests Booked</p>
-      </article>
-      <article class="stat-card">
-        <div class="icon"><i class="fas fa-user-check"></i></div>
-        <h3>500+</h3>
-        <p>Happy Patients</p>
-      </article>
-      <article class="stat-card">
-        <div class="icon"><i class="fas fa-microscope"></i></div>
-        <h3>500+</h3>
-        <p>Certified Labs</p>
-      </article>
-      <article class="stat-card">
-        <div class="icon"><i class="fas fa-heartbeat"></i></div>
-        <h3>500+</h3>
-        <p>Health Profiles</p>
-      </article>
-    </section>
+            <div class="package-card featured">
+                <div class="package-badge">60% Off</div>
+                <h3 class="package-title">Full Body Health<br>Checkup</h3>
+                <div class="package-tests">79 Tests</div>
+                <div class="package-price">
+                    <span class="original-price">₹ 3000/-</span>
+                    <span class="current-price">₹ 1300/-</span>
+                </div>
+                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+            </div>
 
-    <section class="packages">
-      <header class="section-head">
-        <p class="eyebrow">Health Packages</p>
-        <h2>Popular Health Check Packs</h2>
-      </header>
-      <div class="track-controls">
-        <button class="track-btn" data-track="packages-track" data-dir="-1"><i class="fas fa-chevron-left"></i></button>
-        <button class="track-btn" data-track="packages-track" data-dir="1"><i class="fas fa-chevron-right"></i></button>
-      </div>
-      <div class="card-track" id="packages-track">
-        <article class="package-card featured">
-          <span class="badge">60% Off</span>
-          <h3>Full Body Health Checkup</h3>
-          <p class="tests">79 Tests</p>
-          <p class="price"><span class="strike">₹ 3000/-</span> ₹ 1300/-</p>
-          <a href="#" class="btn secondary">Add To Cart</a>
-        </article>
-        <article class="package-card">
-          <span class="badge">50% Off</span>
-          <h3>Women Wellness Profile</h3>
-          <p class="tests">65 Tests</p>
-          <p class="price"><span class="strike">₹ 2800/-</span> ₹ 1400/-</p>
-          <a href="#" class="btn secondary">Add To Cart</a>
-        </article>
-        <article class="package-card">
-          <span class="badge">45% Off</span>
-          <h3>Advanced Cardiac Care</h3>
-          <p class="tests">52 Tests</p>
-          <p class="price"><span class="strike">₹ 3200/-</span> ₹ 1750/-</p>
-          <a href="#" class="btn secondary">Add To Cart</a>
-        </article>
-        <article class="package-card">
-          <span class="badge">40% Off</span>
-          <h3>Diabetes Control Panel</h3>
-          <p class="tests">48 Tests</p>
-          <p class="price"><span class="strike">₹ 2200/-</span> ₹ 1300/-</p>
-          <a href="#" class="btn secondary">Add To Cart</a>
-        </article>
-      </div>
+            <div class="package-card">
+                <div class="package-badge">60% Off</div>
+                <h3 class="package-title">Full Body Health<br>Checkup</h3>
+                <div class="package-tests">79 Tests</div>
+                <div class="package-price">
+                    <span class="original-price">₹ 3000/-</span>
+                    <span class="current-price">₹ 1300/-</span>
+                </div>
+                <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+            </div>
+        </div>
     </section>
 
     <section class="suggestion">
@@ -125,89 +107,123 @@
       </div>
       <div class="suggestion-grid">
         <div class="body-map">
-          <img src="https://images.unsplash.com/photo-1530023367847-a683933f4177?auto=format&fit=crop&w=600&q=80" alt="Body anatomy">
-          <button class="map-tag">Heart</button>
+          <svg class="body-diagram" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:rgba(255,255,255,0.9);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(255,255,255,0.7);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="150" cy="40" rx="35" ry="40" fill="url(#bodyGradient)" opacity="0.9"/>
+            <rect x="115" y="75" width="70" height="90" rx="15" fill="url(#bodyGradient)" opacity="0.9"/>
+            <ellipse cx="150" cy="120" rx="30" ry="25" fill="#10d1a3" opacity="0.8"/>
+            <rect x="85" y="80" width="25" height="80" rx="12" fill="url(#bodyGradient)" opacity="0.8"/>
+            <rect x="190" y="80" width="25" height="80" rx="12" fill="url(#bodyGradient)" opacity="0.8"/>
+            <rect x="120" y="165" width="60" height="120" rx="15" fill="url(#bodyGradient)" opacity="0.85"/>
+            <ellipse cx="135" cy="220" rx="25" ry="30" fill="rgba(255,255,255,0.6)" opacity="0.7"/>
+            <ellipse cx="165" cy="220" rx="25" ry="30" fill="rgba(255,255,255,0.6)" opacity="0.7"/>
+            <rect x="125" y="285" width="20" height="180" rx="10" fill="url(#bodyGradient)" opacity="0.85"/>
+            <rect x="155" y="285" width="20" height="180" rx="10" fill="url(#bodyGradient)" opacity="0.85"/>
+            <ellipse cx="135" cy="475" rx="18" ry="12" fill="url(#bodyGradient)" opacity="0.8"/>
+            <ellipse cx="165" cy="475" rx="18" ry="12" fill="url(#bodyGradient)" opacity="0.8"/>
+          </svg>
+          <div class="map-tag">Heart</div>
         </div>
         <div class="suggestion-panel">
-          <div class="panel-selectors">
-            <button class="selector active">Male</button>
-            <button class="selector">Female</button>
-            <button class="selector">Other</button>
+          <div class="dropdown-row">
+            <div class="dropdown-wrapper">
+              <select class="custom-dropdown">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="dropdown-wrapper">
+              <select class="custom-dropdown">
+                <option>Below 30 Years</option>
+                <option>30 - 45 Years</option>
+                <option>45+ Years</option>
+              </select>
+            </div>
           </div>
-          <div class="panel-selectors age">
-            <button class="selector active">Below 30 Years</button>
-            <button class="selector">30 - 45 Years</button>
-            <button class="selector">45+ Years</button>
+          <div class="issues-section">
+            <h3 class="issues-title">Commonly faced issues related Heart</h3>
+            <div class="issue-tags">
+              <button class="issue-tag">Chest Pain</button>
+              <button class="issue-tag">Dizziness</button>
+              <button class="issue-tag">Shortness Of Breath</button>
+              <button class="issue-tag">Fatigue</button>
+              <button class="issue-tag">Pressure</button>
+            </div>
           </div>
-          <div class="issue-tags">
-            <span>Chest Pain</span>
-            <span>Dizziness</span>
-            <span>Shortness Of Breath</span>
-            <span>Fatigue</span>
-            <span>Pressure</span>
-          </div>
-          <div class="profile-list">
-            <article>
-              <div>
-                <h4>Test One</h4>
-                <p>Preventive health profile</p>
+          <div class="tests-section">
+            <h3 class="tests-title">Suggested Preventive health profile</h3>
+            <div class="profile-list">
+              <div class="profile-item">
+                <div class="profile-info">
+                  <i class="fas fa-heartbeat profile-icon"></i>
+                  <h4>Test one</h4>
+                </div>
+                <button class="btn-know-more">Know More</button>
               </div>
-              <a href="#" class="btn inline">Know More</a>
-            </article>
-            <article>
-              <div>
-                <h4>Test Two</h4>
-                <p>Preventive health profile</p>
+              <div class="profile-item">
+                <div class="profile-info">
+                  <i class="fas fa-heartbeat profile-icon"></i>
+                  <h4>Test one</h4>
+                </div>
+                <button class="btn-know-more">Know More</button>
               </div>
-              <a href="#" class="btn inline">Know More</a>
-            </article>
-            <article>
-              <div>
-                <h4>Test Three</h4>
-                <p>Preventive health profile</p>
+              <div class="profile-item">
+                <div class="profile-info">
+                  <i class="fas fa-heartbeat profile-icon"></i>
+                  <h4>Test one</h4>
+                </div>
+                <button class="btn-know-more">Know More</button>
               </div>
-              <a href="#" class="btn inline">Know More</a>
-            </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="why-us">
-      <header class="section-head">
-        <p class="eyebrow">Why Choose Us</p>
-        <h2>We'll Ensure You Always Get The Best Results</h2>
-        <p>Your full-service lab for clinical trials. Our mission is to ensure the generation of accurate results.</p>
-      </header>
-      <div class="why-grid">
-        <article>
-          <div class="emoji">🧪</div>
-          <h3>600+ Different Tests</h3>
-          <p>Experienced professionals delivering accurate reports every day.</p>
-        </article>
-        <article>
-          <div class="emoji">⚙️</div>
-          <h3>High-End Technology</h3>
-          <p>State-of-the-art infrastructure built for reliable diagnostics.</p>
-        </article>
-        <article>
-          <div class="emoji">🏠</div>
-          <h3>Free Home Sampling</h3>
-          <p>Book sample collection at your address with zero hassle.</p>
-        </article>
-        <article>
-          <div class="emoji">🤝</div>
-          <h3>Patient Support</h3>
-          <p>Expert assistance and recommendations whenever you need them.</p>
-        </article>
+      <div class="why-us-container">
+        <div class="why-features">
+          <div class="feature-card">
+            <img src="./assets/600+-different-tests.jpg" alt="600+ Different Tests" class="feature-icon">
+            <h3>600+ Different Tests</h3>
+            <p>Experienced Professionals</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/high-end-technology.jpg" alt="High-End Technology" class="feature-icon">
+            <h3>High-End Technology</h3>
+            <p>State-Of-The-Art Technology</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/free-home-sampling.jpg" alt="Free Home Sampling" class="feature-icon">
+            <h3>Free Home Sampling</h3>
+            <p>Sampling At Your Address</p>
+          </div>
+          <div class="feature-card">
+            <img src="./assets/patient-support.jpg" alt="Patient Support" class="feature-icon">
+            <h3>Patient Support</h3>
+            <p>Advice And Recommendations</p>
+          </div>
+        </div>
+        <div class="why-content">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>We'll Ensure You Always Get The Best Results</h2>
+          <p class="description">Your full-service lab for clinical trials. Our mission is to ensure the generation of accurate.</p>
+          <p class="register-text">Novalab is registered with the following governmental agencies:</p>
+          <ul class="accreditations">
+            <li>Drug Enforcement Agency (DEA) No. RG0105216</li>
+            <li>Food and Drug Administration (FDA) No. 2182801</li>
+            <li>International Standards Organization (ISO9001 and ISO17025)</li>
+            <li>United States Department of Agriculture (USDA) No. 35-R-034</li>
+          </ul>
+          <button class="btn-view-list">View List</button>
+        </div>
       </div>
-      <ul class="accreditations">
-        <li>Drug Enforcement Agency (DEA) No. RG0105216</li>
-        <li>Food and Drug Administration (FDA) No. 2182801</li>
-        <li>ISO 9001 and ISO 17025 Certified Labs</li>
-        <li>US Department of Agriculture (USDA) No. 35-R-034</li>
-      </ul>
-      <a class="btn" href="#">View List</a>
     </section>
 
     <section class="tests">
@@ -215,43 +231,45 @@
         <p class="eyebrow">Our Tests</p>
         <h2>Most Popular Tests</h2>
       </header>
-      <div class="track-controls">
-        <button class="track-btn" data-track="tests-track" data-dir="-1"><i class="fas fa-chevron-left"></i></button>
-        <button class="track-btn" data-track="tests-track" data-dir="1"><i class="fas fa-chevron-right"></i></button>
-      </div>
-      <div class="card-track" id="tests-track">
-        <article class="test-card">
-          <img src="https://images.unsplash.com/photo-1580894906472-9d7c748c140d?auto=format&fit=crop&w=400&q=80" alt="Microbiology tests">
-          <div class="test-body">
-            <h3>Microbiology Tests</h3>
-            <p>Capitalize on low hanging fruit to identify added value activity.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
-        <article class="test-card">
-          <img src="https://images.unsplash.com/photo-1582560475093-87d72bb1d9f6?auto=format&fit=crop&w=400&q=80" alt="Histopathology tests">
-          <div class="test-body">
-            <h3>Histopathology Tests</h3>
-            <p>Diagnostics backed by precise lab processes and experts.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
-        <article class="test-card">
-          <img src="https://images.unsplash.com/photo-1612277794933-9c1608b8eaa6?auto=format&fit=crop&w=400&q=80" alt="Hemoglobin tests">
-          <div class="test-body">
-            <h3>Hemoglobin Tests</h3>
-            <p>Identify anomalies quickly to stay ahead of health risks.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
-        <article class="test-card">
-          <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=400&q=80" alt="Lipid profile">
-          <div class="test-body">
-            <h3>Lipid Profile</h3>
-            <p>Track cholesterol and triglycerides with confidence.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
+      <div class="tests-carousel-wrapper">
+        <button class="carousel-arrow left-arrow" data-track="tests-track" data-dir="-1">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="tests-carousel" id="tests-track">
+          <article class="test-card">
+            <div class="test-image">
+              <img src="./assets/microbiology-tests.jpg" alt="Microbiology Tests">
+            </div>
+            <div class="test-body">
+              <h3>Microbiology Tests</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="test-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="test-card">
+            <div class="test-image">
+              <img src="./assets/histopatology-tests.jpg" alt="Histopatology Tests">
+            </div>
+            <div class="test-body">
+              <h3>Histopatology Tests</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="test-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="test-card">
+            <div class="test-image">
+              <img src="./assets/haemoglobin-tests.jpg" alt="Hemoglobin Tests">
+            </div>
+            <div class="test-body">
+              <h3>Hemoglobin Tests</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="test-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+        <button class="carousel-arrow right-arrow" data-track="tests-track" data-dir="1">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </section>
 
@@ -261,20 +279,56 @@
         <h2>Browse Test By Habit</h2>
       </header>
       <div class="habit-grid">
-        <div>Alcoholism</div>
-        <div>Stress</div>
-        <div>No Sleep</div>
-        <div>Zero Exercise</div>
-        <div>Junk Food</div>
-        <div>Smoking</div>
-        <div>Poor Nutrition</div>
-        <div>Poor Eating</div>
-        <div>Low Iron Diet</div>
-        <div>Anger</div>
-        <div>Heartburn</div>
-        <div>Medicine Overuse</div>
+        <div class="habit-card">
+          <img src="./assets/alcoholism.png" alt="Alcoholism">
+          <h3>Alcholism</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/stress.png" alt="Stress">
+          <h3>Stress</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/no-sleep.png" alt="No Sleep">
+          <h3>No Sleep</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/zero-exercise.png" alt="Zero Exercise">
+          <h3>Zero Exercise</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/junk-food.png" alt="Junk Food">
+          <h3>Junk Food</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/smoking.png" alt="Smoking">
+          <h3>Smoking</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/poor-nutrition.png" alt="Poor Nutrition">
+          <h3>Poor Nutrition</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/poor-eating.png" alt="Poor Eating">
+          <h3>Poor Eating</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/low-iron-diet.png" alt="Low Iron Diet">
+          <h3>Low Iron Diet</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/anger.png" alt="Anger">
+          <h3>Anger</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/heartburn.png" alt="Heartburn">
+          <h3>Heartburn</h3>
+        </div>
+        <div class="habit-card">
+          <img src="./assets/medicine-overuse.png" alt="Medicine Overuse">
+          <h3>Medicine Overuse</h3>
+        </div>
       </div>
-      <a class="btn" href="#">View Details</a>
+      <button class="btn-view-details">View Details</button>
     </section>
 
     <section class="risk">
@@ -282,72 +336,150 @@
         <p class="eyebrow">Our Tests</p>
         <h2>Browse Test By Risks</h2>
       </header>
-      <div class="risk-cards">
-        <article>
-          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80" alt="Diabetes">
-          <div>
-            <h3>Diabetes</h3>
-            <p>Identify a ballpark value added activity to beta test.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
-        <article>
-          <img src="https://images.unsplash.com/photo-1559087867-8380b712c313?auto=format&fit=crop&w=400&q=80" alt="Heart">
-          <div>
-            <h3>Heart</h3>
-            <p>Capitalize on reliable diagnostics to keep your heart strong.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
-        <article>
-          <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=400&q=80" alt="Thyroid">
-          <div>
-            <h3>Thyroid</h3>
-            <p>Monitor hormone balance and stay ahead of thyroid issues.</p>
-            <a href="#">Find Out More</a>
-          </div>
-        </article>
+      <div class="risk-carousel-wrapper">
+        <button class="carousel-arrow left-arrow" data-track="risk-track" data-dir="-1">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="risk-carousel" id="risk-track">
+          <article class="risk-card">
+            <div class="risk-image">
+              <img src="./assets/diabetes.png" alt="Diabetes">
+            </div>
+            <div class="risk-content">
+              <h3>Diabetes</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="risk-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="risk-card">
+            <div class="risk-image">
+              <img src="./assets/heart.avif" alt="Heart">
+            </div>
+            <div class="risk-content">
+              <h3>Heart</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="risk-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="risk-card">
+            <div class="risk-image">
+              <img src="./assets/thyroid.jpg" alt="Thyroid">
+            </div>
+            <div class="risk-content">
+              <h3>Thyroid</h3>
+              <p>Capitalize On Low Hanging Fruit To Identify A Ballpark Value Added Activity To Beta Test.</p>
+              <a href="#" class="risk-link">FIND OUT MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+        <button class="carousel-arrow right-arrow" data-track="risk-track" data-dir="1">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </section>
 
     <section class="app">
-      <div class="section-head">
-        <p class="eyebrow">Our App Is</p>
-        <h2>Coming Soon</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-        <a class="btn" href="#">Get Notified</a>
+      <div class="app-content">
+        <h3 class="app-eyebrow">Our App Is</h3>
+        <h2 class="app-title">COMING SOON</h2>
+        <p class="app-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+        <button class="btn-get-notified">Get notified</button>
       </div>
-      <div class="app-visual">
-        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80" alt="Mobile preview">
+      <div class="app-phones">
+        <div class="phone-mockup phone-1">
+          <img src="./assets/logo.png" alt="Book Your Lab App">
+        </div>
+        <div class="phone-mockup phone-2">
+        </div>
       </div>
     </section>
 
     <section class="testimonial">
-      <div class="testimonial-inner">
-        <p class="eyebrow">Testimonial</p>
-        <h2>What Our Patients Say</h2>
-        <blockquote>
-          “In our long association with Novalab the attribute which we admire most, is their passion for excellence. This passion is exemplified in a unique focus for quality both in their products as well as service, patients' convenience and comfort.”
-        </blockquote>
-        <p class="author">Jennifer Lee</p>
-        <p class="role">First Time Patient</p>
+      <div class="testimonial-content">
+        <div class="quote-icon">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 75C30 68.5 32 63 36 58.5C40 54 45.5 51.5 52.5 51V41C44.5 41.5 37.5 44.5 31.5 50C25.5 55.5 22.5 62.5 22.5 71V90H52.5V75H30Z" fill="#10d1a3" opacity="0.2"/>
+            <path d="M67.5 75C67.5 68.5 69.5 63 73.5 58.5C77.5 54 83 51.5 90 51V41C82 41.5 75 44.5 69 50C63 55.5 60 62.5 60 71V90H90V75H67.5Z" fill="#10d1a3" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="testimonial-text">
+          <p class="eyebrow">Testimonial</p>
+          <h2>What Our Patients Say</h2>
+          <blockquote>
+            "In our long association with Novalab the attribute which we admire most, is their passion for excellence. This passion is exemplified in a unique focus for quality both in their products as well as service, patients' convenience and comfort."
+          </blockquote>
+          <div class="testimonial-author">
+            <p class="author-name">Jennifer Lee</p>
+            <p class="author-role">First Time Patient</p>
+          </div>
+          <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <div class="stat-info">
+            <h3>500+</h3>
+            <p>Tests Booked</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <div class="stat-info">
+            <h3>500+</h3>
+            <p>Tests Booked</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <div class="stat-info">
+            <h3>500+</h3>
+            <p>Tests Booked</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-now">
+      <div class="book-now-content">
+        <p class="book-now-eyebrow">Book Now</p>
+        <h2>Testing By Our Expert Lab Scientists</h2>
+        <p class="book-now-description">Bring to the table win-win survival strategies to ensure proactive domination and at the end of the day.</p>
+        <button class="btn-book-now">Book Now</button>
       </div>
     </section>
 
     <section class="newsletter">
-      <h2>Subscribe To Our Newsletter</h2>
-      <form>
-        <input type="email" placeholder="Enter your email id">
-        <button type="submit">Subscribe</button>
-      </form>
+      <div class="newsletter-bg">
+        <div class="newsletter-content">
+          <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter Your Email Id" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="https://dummyimage.com/140x48/06385f/ffffff&text=Book+Your+Lab" alt="Book Your Lab">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <img src="./assets/logo.png" alt="Book Your Lab" class="footer-logo">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <div class="socials">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -381,35 +513,55 @@
       </div>
       <div class="footer-column">
         <h3>Our Presence</h3>
-        <ul>
-          <li><a href="#">Mumbai</a></li>
-          <li><a href="#">Delhi</a></li>
-          <li><a href="#">Agra</a></li>
-          <li><a href="#">Ahmedabad</a></li>
-          <li><a href="#">Ambala</a></li>
-          <li><a href="#">Kolkata</a></li>
-          <li><a href="#">Pune</a></li>
-        </ul>
+        <div class="presence-grid">
+          <div class="presence-col">
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Agra</a>
+            <a href="#">Ahemdabad</a>
+            <a href="#">Ambala</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Pune</a>
+          </div>
+          <div class="presence-col">
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Agra</a>
+            <a href="#">Ahemdabad</a>
+            <a href="#">Ambala</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Pune</a>
+          </div>
+          <div class="presence-col">
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Agra</a>
+            <a href="#">Ahemdabad</a>
+            <a href="#">Ambala</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Pune</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-badges">
       <article>
-        <i class="fas fa-shield-heart"></i>
+        <img src="./assets/reliable.png" alt="Reliable" class="badge-icon">
         <h4>Reliable</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
       </article>
       <article>
-        <i class="fas fa-lock"></i>
+        <img src="./assets/secure.png" alt="Secure" class="badge-icon">
         <h4>Secure</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
       </article>
       <article>
-        <i class="fas fa-hand-holding-usd"></i>
+        <img src="./assets/affordable.png" alt="Affordable" class="badge-icon">
         <h4>Affordable</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
       </article>
     </div>
-    <p class="footer-note">© 2025 All Rights Reserved by Intermediq Tech Health Services Private Limited</p>
+    <p class="footer-note">© 2020 All Rights Reserved by Intermediq Tech Health Services Private Limited</p>
   </footer>
 
   <a class="floating-call" href="tel:+919090666333">
