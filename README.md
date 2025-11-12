@@ -1,6 +1,6 @@
 # Book Your Lab
 
-A modern and responsive website for booking lab tests and diagnostic services online. Built with HTML, CSS, and JavaScript.
+A website for booking lab tests and diagnostic services online with clean ui. Built with HTML, CSS, and JavaScript.
 
 ## Features
 
@@ -14,7 +14,7 @@ A modern and responsive website for booking lab tests and diagnostic services on
 
 ## Live Demo
 
-Visit the live website: [Coming Soon]
+Visit the live website: https://book-your-lab-woad.vercel.app
 
 ## Technologies Used
 
@@ -36,11 +36,3 @@ book-your-lab/
 ├── script.js           # JavaScript functionality
 └── assets/             # Images and media files
 ```
-
-## Contact
-
-For any inquiries, please reach out at: (+91) 9090 666 333
-
-## License
-
-This project is open source and available for personal and commercial use.
